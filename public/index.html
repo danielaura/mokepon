@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MOKEPON!</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  </head>
+  <body>
+    <section id='seleccionar-mascota'>
+      <h1 id='titulo' class='titulo' >MOKEPON! 🔥💧🌱</h1>    
+      <h2 class='subtitulo'>Elije a tu mascota</h2>
+      <div class='tarjetas' id='contenedor-tarjetas'>
+        <!-- <input type="radio" name="mascota" id="hipodoge" />
+        <label class='tarjeta-de-mokepon' for="hipodoge">
+          <p>Hipodoge</p>
+          <img src='./1.png' alt='hipodoge'>
+        </label>
+        
+        <input type="radio" name="mascota" id="capipepo" />
+        <label class='tarjeta-de-mokepon' for="capipepo">
+          <p>Capipepo</p>
+          <img src='./2.png' alt='capipepo'>
+        </label>
+        
+        <input type="radio" name="mascota" id="ratigueya" />         
+        <label class='tarjeta-de-mokepon' for="ratigueya">
+          <p>Ratigueya</p>
+          <img src='./3.png' alt='ratigueya'>
+        </label>  -->
+      </div>
+      <button id='boton-mascota'>Seleccionar</button>
+    </section> 
+
+    <section id='mostrar-mapa'>
+      <h1 id='titulo' class='titulo' >Recorre el mapa con tu mokepon</h1>      
+      <canvas id='mapa'></canvas>   
+      <button class='BMovimiento' onclick="revisarMovimiento('ArrowUp')">Up</button> 
+      <div style='display: flex;'>
+        <button class='BMovimiento' onclick="revisarMovimiento('ArrowLeft')">Left</button> 
+        <button class='BMovimiento' onclick="revisarMovimiento('ArrowDown')">Down</button> 
+        <button class='BMovimiento' onclick="revisarMovimiento('ArrowRight')">Right</button> 
+      </div>
+    </section>
+    
+    <section id='seleccionar-ataque'>
+      <h1 id='titulo' class='titulo' >MOKEPON! 🔥💧🌱</h1>  
+      <h2 class='subtitulo'>Elije a tu ataque</h2>              
+      <div class='tarjetas-ataque' id='contenedor-tarjetas-ataque'>
+        <!-- <button class='botones-de-ataque' id='boton-fuego'>Fuego 🔥</button>
+        <button class='botones-de-ataque' id='boton-agua'>Agua 💧</button>
+        <button class='botones-de-ataque' id='boton-tierra'>Tierra 🌱</button> -->
+      </div>      
+      <div class='ataque'>
+        <div class='ataques-jugador'>
+          <p id='mascota-jugador'></p> 
+          <p id='vidas-jugador'>0</p>
+          <div id='ataque-jugador'></div>                
+        </div>
+        <div class='ataques-enemigo'>
+          <p id='mascota-enemigo'></p> 
+          <p id='vidas-enemigo'>0</p>          
+          <div id='ataque-enemigo'></div>   
+        </div>
+      </div>
+      <div class='mensajes' id='mensajes';'>
+        <div id='resultado'>Vamo a darle!</div>
+        
+        <section id='reiniciar-juego'>
+          <button id='boton-reiniciar'>Reiniciar</button>
+        </section>
+      </div>
+    </section>
+    <script src='./js/mokepon.js'></script>
+  </body>
+</html>

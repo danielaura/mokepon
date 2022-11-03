@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
+body {
+    font-family: 'BhuTuka Expanded One', cursive;
+    background-color: #2a0944 ;
+    margin: 5px;
+}
+#seleccionar-mascota, #mostrar-mapa, #seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 50vh; */
+}
+#mapa{
+    border: 2px solid #fec260;
+}
+.titulo{
+    color:#FEC260;
+    font-size: 36px;
+    text-align: center;
+    /* width: 280px;
+    height: 50px; */
+    /* align-items: center; */
+    /* background-color: thistle; */
+}
+.subtitulo{
+    color:#FEC260;
+    font-size: 24px;
+    /* width: 310px;
+    height: 50px;
+     */
+}
+
+.tarjetas, .tarjetas-ataque{
+    display: flex;
+    gap: 10px;
+    color:#2a0944
+}
+
+.tarjeta-de-mokepon{
+    width: 230px;
+    height: 140px;
+    background: #fec260;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    /* border: 5px solid#a10035; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.tarjeta-de-mokepon img{
+    width: 80px;
+}
+#boton-mascota{
+    width: 250px;
+    height: 60px;
+    background:#3FA796;
+    font-size: 24px;
+    color: #2a0944;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 10px;
+    border: 5px solid #3FA796;
+    font-family: 'BhuTuka Expanded One', cursive;
+}
+.ataque{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    color: #FEC260;
+    font-size: 20px;
+    margin: 6px
+}
+.botones-de-ataque, .BMovimiento{
+    display: flex;
+    width: 80px;
+    background:#fec260;
+    font-size: 20px;
+    color: #2a0944;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 2px;
+    border-radius: 10px;
+    /* border: 5px solid #a10035; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mensajes{
+    display: flex;
+    /* width: 450px; */
+    /* background: #fec260; */
+    padding: 14px;
+    margin-top: 10px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fec260;
+    font-size: 28px;
+    /* border: 1px solid; */
+}
+#boton-reiniciar{
+    width: 120px;
+    height: 40px;
+    background:#a10035;
+    font-size: 15px;
+    color: #fec260;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 10px;
+    border: none;
+}
+input {
+    display: none;
+}
+input:checked + label{
+    background-color: #a10035;
+    color: #FEC260;  
+}
+button {
+    background-color: #3fa796;
+    width: 310px;
+    height: 50px;
+}
+@media(max-width:750px){
+    .tarjetas, .tarjetas-ataque, .ataque{
+        display: flex;
+        flex-direction: column;
+    }
+}
